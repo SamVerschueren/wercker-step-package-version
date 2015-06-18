@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo node ./index
+sudo node $WERCKER_STEP_ROOT/index
