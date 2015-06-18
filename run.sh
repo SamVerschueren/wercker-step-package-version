@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo node ./scripts/version
+sudo node ./index
