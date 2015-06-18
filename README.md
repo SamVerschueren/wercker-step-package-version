@@ -16,7 +16,7 @@ it will be exported as uppercase variable.
 
 ```
 - samverschueren/package-version:
-    name: version
+    envvar: version
 ```
 
 ## Why
