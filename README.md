@@ -11,7 +11,7 @@ The following step will put the version in the `PACKAGE_VERSION` environment var
 ```
 
 You can also specify the name of the environment variable. The following example will export the
-version in the `VERSION` environment variable. Notice that even though the name is provided in lowercase,
+version in the `VERSION` environment variable. Notice that even though the `envvar` is provided in lowercase,
 it will be exported as uppercase variable.
 
 ```

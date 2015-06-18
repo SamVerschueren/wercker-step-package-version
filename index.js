@@ -13,11 +13,5 @@ var path = require('path');
 // Load the package file
 var pkg = require(path.join(process.env.WERCKER_ROOT, 'package.json'));
 
-// Use the `name` property if provided, or use `PACKAGE_VERSION` as name
-var key = (process.env.WERCKER_PACKAGE_VERSION_ENVVAR || 'PACKAGE_VERSION').toUpperCase(),
-	value = pkg.version || '0.0.1';
-
-// Export the variable
-process.env[key] = value;
-
-console.log('Package version ' + value + ' exported as ' + key);
+// Write the version back to the shell script
+process.stdout.write(pkg.version || '0.0.1');
