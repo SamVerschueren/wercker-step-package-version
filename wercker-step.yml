@@ -1,5 +1,5 @@
 name: package-version
-version: 1.1.0
+version: 1.1.1
 description: Exports the version specified in the package.json file as environment variable
 keywords:
   - package.json
